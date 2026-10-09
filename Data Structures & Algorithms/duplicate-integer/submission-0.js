@@ -4,8 +4,8 @@ class Solution {
      * @return {boolean}
      */
     hasDuplicate(nums) {
-        const uniques = new Set(nums);
-        if (nums.length === uniques.size)
+        const set = new Set(nums);
+        if(set.size === nums.length)
         {
             return false
         }
